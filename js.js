@@ -22,9 +22,7 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
-let dateElement = document.querySelector("#date");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
+
 
 function displayWeatherCondition(response) {
   console.log(response);
@@ -69,12 +67,6 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-let celTemp = null;
-let Form = document.querySelector("#form");
-Form.addEventListener("submit", handleSubmit);
-
-let currentLocationButton = document.querySelector(".location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
 
 function showInFahrenheit(event) {
   event.preventDefault();
@@ -93,8 +85,22 @@ function showInCelsius(event) {
   tempElement.innerHTML = Math.round(celTemp);
 }
 
+let dateElement = document.querySelector("#date");
+let currentTime = new Date();
+dateElement.innerHTML = formatDate(currentTime);
+
+let celTemp = null;
+
+let Form = document.querySelector("#form");
+Form.addEventListener("submit", handleSubmit);
+
+let currentLocationButton = document.querySelector(".location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+
 let far = document.querySelector("#far");
 far.addEventListener("click", showInFahrenheit);
+
 let cel = document.querySelector("#cel");
 cel.addEventListener("click", showInCelsius);
+
 searchCity("Ethiopia");
