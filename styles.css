@@ -1,0 +1,147 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: radial-gradient(
+    circle at 0.7% 1%,
+    rgb(215, 248, 247) 0%,
+    rgb(220, 234, 241) 100.2%
+  );
+}
+h1 {
+  color: #070c27;
+  font-weight: bold;
+
+  position: relative;
+  left: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #0a0e25;
+
+  position: relative;
+  left: 10px;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: bold;
+
+  margin: 0 auto;
+}
+ul {
+  padding: 0;
+}
+
+li {
+  margin-left: 1px;
+  color: rgb(41, 18, 14);
+
+  height: 19px;
+  font-size: 20px;
+  list-style: none;
+  margin: 10px;
+}
+
+h5 {
+  color: rgb(66, 6, 6);
+  font-weight: bold;
+}
+.container {
+  margin: 20px;
+  padding: 0;
+}
+
+.card {
+  margin: 10px;
+  background: radial-gradient(
+    465px at -15.1% -25%,
+    rgb(17, 130, 193) 0%,
+    rgb(67, 166, 238) 49%,
+    rgb(126, 203, 244) 90.2%
+  );
+
+  border-radius: 20px;
+  max-width: 60%;
+  height: 600px;
+}
+
+#search-bar {
+  border: 2px solid rgb(59, 20, 5);
+}
+.location-button {
+  background-color: rgb(4, 61, 4);
+  color: white;
+  border: white;
+  padding: 7px;
+  border-radius: 5px;
+  transition: 200ms ease-in-out;
+}
+.location-button:hover {
+  color: black;
+  background: white;
+}
+
+.temp {
+  color: rgb(33, 33, 33);
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 2;
+  word-spacing: 72px;
+  margin-left: 25px;
+  position: relative;
+  top: -74px;
+  right: -50px;
+}
+
+.units {
+  height: 25px;
+  line-height: 25px;
+  margin-top: 0;
+  padding-left: 33px;
+  vertical-align: top;
+  width: 47px;
+  position: relative;
+  top: -60px;
+  right: -38px;
+}
+#cel,
+#far {
+  text-decoration: none;
+}
+.active {
+  color: black;
+  text-decoration: none;
+}
+
+#temp {
+  font-size: 50px;
+  color: rgb(12, 12, 12);
+}
+#date {
+  color: #090c18;
+}
+.description {
+  color: rgb(170, 10, 10);
+  font-size: 25px;
+  margin: auto;
+  display: block;
+}
+
+.units {
+  font-size: 20px;
+  color: #2941c5;
+  position: relative;
+  bottom: 30px;
+  left: 10px;
+}
+.col {
+  margin: 0px;
+}
+.degree {
+  font-size: 15px;
+
+  color: #070c2c;
+}
+#open-source {
+  margin: 50px;
+}

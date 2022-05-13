@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+  </head>
+  <body>
+      <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form id="form" class="mb-3">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Enter a city here..."
+                  autofocus="on"
+                  id="search-text-input"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  placeholder="Enter a city"
+                  autocomplete="off"
+                  autofocus="on"
+                  id="search-form"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+              <div class="col-3">
+                <button class="location-button" >Current location</button>
+              </div>
+            
+          </form>
+              <br />
+              <h1 id="city"></h1>
+               <h4>
+                <span id="date">
+                  <span id="current-day"></span> <span id="current-hour"></span
+                  ><span id="current-minutes"></span
+                ></span>
+              </h4>
+              <div class="row">
+              <div class="col-5">
+            <div class="clearfix">
+                <img src=" " alt=""  id="icons">
+              <div class="float-left">
+                <span class="temp" id="temp"></span
+                ><span class="units"> <a href="#" id="cel" class="active">°C</a> | <a href="#" id="far">°F</a></span>
+                <span class="description"></span>
+                  <ul>
+                  
+                <li>Humidity:<span id="humidity"></span>%
+              
+                </li>
+                <li>Wind:<span id="wind"></span>km/h
+              
+                </li>
+                  </ul>
+                </div>
+            </div>
+            </div>
+             
+        <br>
+            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+              <div class="col">
+                <h5>Tue</h5>
+                
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+                
+                <div class="degree"><b>30°C</b></div>
+              </div>
+              <br />
+              
+                <div class="col">
+                  <h5>Wed</h5>
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+                  <div class="degree"><b>12°C</b></div>
+                </div>
+            
+              <br />
+             
+                <div class="col">
+                  <h5>Thu</h5>
+
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" alt="">
+                  <div class="degree"><b>22°C</b></div>
+                </div>
+            
+              <br />
+             
+                <div class="col">
+                  <h5>Fri</h5>
+                 <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" alt="">
+                  <div class="degree"><b>37°C</b></div>
+                </div>
+              
+              <br />
+             
+                <div class="col">
+                  <h5>Sat</h5>
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" alt="">
+                  <div class="degree"><b>10°C</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+       <span id="open-source"><a href="https://github.com/Rahel1921/Weather-App-HomeWork" >open a source code</a> <b>:By Rahel.</b></span>
+    </div>
+    
+    <script src="js.js"></script>
+  
+  </body>
+</html>
